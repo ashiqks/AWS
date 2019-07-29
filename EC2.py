@@ -1,7 +1,19 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[68]:
+'''
+
+A tutorial on AWS Elastic Compute Cloud (EC2)
+
+Following are the actions on EC2
+
+- Creating security keypair and security groups
+- Adding the rules to security group
+- Creating a public EC2 instance on a VPC so as to launch a simple web server
+- Creating a private EC2 instance on a VPC
+- Stop, restart, terminate the instances
+
+'''
 
 
 # Import the necessary packages

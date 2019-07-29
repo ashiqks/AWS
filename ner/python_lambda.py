@@ -1,7 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+'''
+
+Handler function for AWS Lambda
+
+'''
 
 import os
 

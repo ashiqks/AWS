@@ -1,7 +1,21 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[119]:
+'''
+
+A tutorial on AWS Virtual Private Cloud
+
+Following are the actions on VPC
+
+- Creating a VPC
+- Creating an internet gateway and attaching it to the VPC
+- Creating public and private subnets
+- Creating a route table
+- Associating the routable with the public subnet and creating a route to the gateway
+- Modify the subnet 
+- Tag the resources
+
+'''
 
 
 # Import the boto3 package for aws

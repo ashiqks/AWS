@@ -1,12 +1,23 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[121]:
+
 
 
 '''
-An example to connect with AWS DyanmoDB database locally and interact it with table creation, insertion, updation,
-reading, deletion operations
+
+A tutorial on AWS DynamoDB database
+
+Following are the actions on DynamoDB
+
+- Creating a DynamoDB instance locally
+- Creating the column and key schemas for the table
+- Insert values
+- Read values
+- Update values
+- Delete values
+- Delete the table
+
 '''
 
 

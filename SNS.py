@@ -3,6 +3,22 @@
 
 # In[1]:
 
+'''
+
+A tutorial to interact with AWS Simple Notification Service (SNS)
+
+Following are the actions on SNS
+
+- Creating topic on SNS
+- Getting and updating the topic attributes
+- Subscribe using email and SQS
+- Getting all the topics registered on SNS
+- Publishing messages from SNS to the subscribers subscribed to the topic
+- Opt out from the topics
+- Deleting the topics
+
+'''
+
 
 # Import necessary packages
 import boto3

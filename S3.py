@@ -4,6 +4,25 @@
 # In[25]:
 
 
+'''
+
+A tutorial on AWS Simple Storage Service (S3)
+
+Following are the action on S3
+
+- Creating a bucket
+- Adding policy to bucket 
+- Getting the bucket policies
+- Encrypting the contents in the bucket
+- Uploading files to S3
+- Uploading files to S3 using multipart feature
+- Enable versioning
+- Download files
+- Delete files
+- Delete bucket
+
+'''
+
 #Import necessary modules
 import boto3
 from boto3.s3.transfer import TransferConfig

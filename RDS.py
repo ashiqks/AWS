@@ -1,7 +1,20 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[136]:
+'''
+
+A tutorial on AWS Relational Database Service (RDS)
+
+Following are the actions on the RDS
+
+- Creating an RDS instance on default VPC with the security group
+- Adding the traffic rules for RDS
+- Creating RDS subnet group
+- Connecting to RDS instance using SQLAlchemy and testing 
+- Taking snapshots of the instance
+- Deleting the instance
+
+'''
 
 
 # Import necessary packages
