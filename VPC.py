@@ -11,7 +11,7 @@ Following are the actions on VPC
 - Creating an internet gateway and attaching it to the VPC
 - Creating public and private subnets
 - Creating a route table
-- Associating the routable with the public subnet and creating a route to the gateway
+- Associating the route table with the public subnet and creating a route to the gateway
 - Modify the subnet 
 - Tag the resources
 
