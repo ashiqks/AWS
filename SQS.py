@@ -141,7 +141,13 @@ def queue_name_to_url(queue_name):
     queue_url = sqs.get_queue_url(QueueName=queue_name)['QueueUrl']
     return queue_url
 
-
+# Adding permission for sqs to send and receive messages
+add_permission_response = sqs.add_permission(QueueUrl=queue_name_to_url(QUEUE_NAME), # Queue Url
+                                             Label='AddPermissionForAll,   # Unique string Id
+                                             AWSAccounIds=['*'],           # All the users 
+                                             Actions=['*'])                # All the actions
+  
+  
 # Function to send message to the sqs queue
 def send_msg(queue_name, msg, message_group_id=None, fifo=False): 
     # Get the url of the queue
@@ -245,20 +251,6 @@ received_msg_std = receive_msg(QUEUE_NAME)
 
 # Receive the messages stored in the fifo queue
 received_msg_fifo = receive_msg(FIFO_QUEUE)
-
-
-# Creata a policy to allow some specic actions for the sqs queue
-new_policy = {
-                "Statement": [
-                                {
-                                    "Sid": "sns-sqs-policy", # A string id
-                                    "Effect": "Allow",       # This policy is about allowing 
-                                    "Principal": '*',        # This policy includes all the users in the account
-                                    "Action": ["sqs:*"],     # This policy allows all kinds of actions including receiving messages or notifications from sns
-                                    "Resource": "arn:aws:sqs:us-east-2:458375213711:First-Queue", # The arn name of the queue
-                            }]}
-
-print(sqs_queue)
 
 
 # Function to delete multiple queues
