@@ -3,6 +3,22 @@
 
 # In[89]:
 
+'''
+
+A tutorial to demonstrate AWS SQS.
+
+Following are the actions done in the example
+
+- Creating standard and fifo queues
+- Attaching dead queue letters for both standard and fifo queues
+- List all the queues available
+- Update the queue attributes
+- Add permissions to the SQS service
+- Sending messages and also by batches
+- Receiving and deleting the messages
+- Deleting the queues
+
+'''
 
 # Import the necessary packages
 import boto3
